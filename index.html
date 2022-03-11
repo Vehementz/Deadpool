@@ -1,0 +1,342 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/stanberry" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/badaboom-bb" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="carousel.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+    <title>DeadPool Agency</title>
+</head>
+
+<body onload="init()">
+
+    <div class="loaderContainer">
+        
+            <div class="animRotation">
+                <div class="loader"></div>
+                <div class="target"><img src="./picture/target.svg"></div>
+              
+        </div>
+    </div>
+    
+
+
+
+    <header id="header">
+        <nav id="linkNav" class="navigation">
+
+            <img id="deadpoolBan" src="picture/deadpool_ban.png" alt="deadpoolBan">
+
+            <button id="changeQuote">Punchline</button>
+            <div id="quote"></div>
+
+        <div class="openMenu"></div>
+        <div class="burger">
+            <span></span>
+        </div>
+        <div class="closeMenu"></div>
+
+            <div id="linkMenu" class="menu">
+                <a class="link" href=#emptyBio>BIO</a>
+                <a class="link" href=#emptyInfo>INFOS</a>
+                <a class="link" href=#mesVictimes>MES VICTIMES</a>
+                <a class="link" href="#emptyAvis">AVIS DE BOGOSS</a>
+                <a class="link" href="#emptyContact">CONTACT</a>
+            </div>
+
+        </nav>
+    </header>
+            <div id="emptyBio"></div>
+            <h1 id="linkBio" class="deadpool">LA DEADPOOL ATTITUDE</h1>
+
+            <section class="biographie">
+                <p class="bio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome dans mon monde ! Oui c'est à toi que je parle, oui toi là... Bref, si tu es ici c'est parce que tu as certainement besoin de l'homme de la situation !
+                <p class="bio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mais avant tout il est de mon devoir de te raconter mon histoire. Arrête de scrolle et reviens ici ! J'ai eu une enfance lamentable -musique triste au violon-, j'ai perdu mon père à l'age de cinq... Ou alors il est parti ?! C'est pas bien important !
+                <p class="bio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adolescent j'étais déjà un caïd et dès mes 19 ans, je suis rentré à la CIA... Et après quelques missions, j'ai fini par m'installer dans une petite maison. Certe elle étais habitée mais de toi à moi, la propriétaire était aveugle ! Oui je l'ai séquestrée et torturée mentalement ! On a passé tellement de doux moments ensemble...</p>  
+                <p class="bio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Je vois ton regard jugeant, tu peux arrêter s'il te plait ? Je peux continuer ? Non mais dis moi si je te dérange ? Bon je vais abréger ! Je vois que mÔssieur n'a pas le temps !</p> 
+                <p class="bio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ce que tu as à savoir c'est que je suis sexy, la mort est amoureuse de moi, d'ailleurs je ne peux pas mourrir ! Et d'après toi, qui est meilleur tueur à gage qu'un homme Immortel ? Wolverine ?? Mais t'es pas net ? Hey au fait, les chimichangas c'est la vie !</p>
+
+            </section>
+
+            <section slideContainer>
+                <div class="slider">
+                    <img class="pictureSlider active contrast landscape" src="./picture/deadpool-god.jpg" alt="Deadpool se prend pour un dieu">
+
+                    <img class="pictureSlider contrast" src="./picture/6be77dc1392316eb27f6551439bfda48.jpg" alt="nosay">
+
+                    <img class="pictureSlider contrast" src="picture/deadpool.jpg" alt="deadpool"> 
+
+                    <img class="pictureSlider" src="picture/sexcastle.jpg" alt="deadpool est en train de lire">
+
+                    <img class="pictureSlider" src="picture/cut.jpg" alt="deadpool embroche quelqu'un">
+
+                    <img class="pictureSlider" src="picture/in-the-arms.jpg" alt="deadpool avec son petit copain">
+
+                    <img class="pictureSlider" src="./picture/Deadpool-Backs.jpg" alt="deadpool fait du stretching">
+                </div>
+                <div class="arrow-part">                   
+
+                    <img class="arrow arrow-right" src="picture/gun-right-redpool.svg" onclick="slideSuivante()">
+                    <img class="arrow arrow-left" src="picture/gun-left-red.svg" onclick="slidePrecedente()">
+                </div>  
+
+            </section>
+              
+            <section id="linkInfo" class="information">
+                <div id="emptyInfo"></div>
+                <div class="middle">
+                    <article>
+                        <h1 id=title1>Compétences</h1>
+                        <p>«Sens de la repartie»</p>
+                        <p>Stratège expert.</p>
+                        <p>Combattant au corps à corps et armes blanches expert.</p>
+                        <p>Tireur d'élite.</p>
+                        <p>Force, endurance, agilité, et réflexes accrus.</p>
+                        <p>Son facteur guérisseur est également à l’origine de son état mental dérangé ; tant qu’il dispose de ses pouvoirs, il restera instable mentalement.</p>
+                    </article>
+                    <table class="board">
+                        <caption>#Survole les meurtres ma licornasse !</caption>
+                        <thead>
+                            <th>Meurtre</th>
+                            <th>Prix</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th onmouseover = "show1(style.visibility = 'visible')" onmouseleave = "unShow1()" class = "thead1">Meurtre classique</th>
+                                <img src="https://2img.net/r/hpimg4/pics/591541edfghj.gif" style="visibility:hidden" id = "imgPool1" onmouseover = show() onmouseleave = unShow()>
+                                <td>Va voir Hitman ou Léon mon lapin</td>
+                            </tr>
+                            <tr>
+                                <th onmouseover = "show2(style.visibility = 'visible')" onmouseleave = "unShow2()" class = "thead2">Meurtre avec Torture</th>
+                                <img src="https://media.giphy.com/media/3oEjI85iXhURbzba0w/giphy.gif" style="visibility:hidden" id = "imgPool2" onmouseover = show() onmouseleave = unShow()>
+                                <td>10 000€ mais si tu me touche junior on peux s'arranger</td>
+                            </tr>
+                            <tr>
+                                <th onmouseover = "show3(style.visibility = 'visible')" onmouseleave = "unShow3()" class = "thead3">Meurtre avec Humiliation</th>
+                                <img src="https://64.media.tumblr.com/0d77a7c76fc8d88130c04dc57ab0dfd2/tumblr_otanmzLjU31vdrfmro2_540.gifv" style="visibility:hidden" id = "imgPool3" onmouseover = show() onmouseleave = unShow()>
+                                <td>5 000€ il est moins chère c'est mon préféré!</td>
+                            </tr>
+                            <tr>
+                                <th onmouseover = "show4(style.visibility = 'visible')" onmouseleave = "unShow4()" class = "thead4">Meurtre Gore</th>
+                                <img src="https://thumbs.gfycat.com/ImmaculateGiantCardinal-size_restricted.gif" style="visibility:hidden" id = "imgPool4" onmouseover = show() onmouseleave = unShow()>
+                                <td>15 000€ L'art ça se travail mon petit lapinou en guimauve</td>
+                            </tr>
+                            <tr>
+                                <th onmouseover = "show5(style.visibility = 'visible')" onmouseleave = "unShow5()" class = "thead5">Meurtre #Je veux 1million de vues</th>
+                                <img src="https://media.giphy.com/media/1yoMFGTk9qfpvhVGVd/giphy.gif" style="visibility:hidden" id = "imgPool5" onmouseover = show() onmouseleave = unShow()>
+                                <td>5 000 000€ Et oui ma petite licorne je veux des Royalties sur mon sex appeal en live!</td>
+                            </tr>
+                             
+                        </tbody>
+                        </table>
+                    <article>
+                        <h1 id="title2">Affiliation</h1>
+                        <p>Ancien membre de X-Force, du Deadpool Corps, des X-Men, de l’Agence-X, du Six Pack, de l’Église Unique Mondiale, de DP Inc., de l’Arme X, des « Pros à louer », des Secret Defenders, des Terrifics, du Département K, des Frightful Four, des Vengeurs des Grands Lacs, de la Maggia, du S.H.I.E.L.D., des Thunderbolts, des Uncanny Avengers ; ancien employé de « Landau, Luckman et Lake (en) », de Mr. Tolliver, du Caïd, du Maître de corvée et probablement d’autres encore.</p>
+                    </article>
+                </div>
+
+            </section>
+
+            <div id="mesVictimes"></div>
+            <div id="mapid">
+
+            </div>
+            <div id="emptyAvis"></div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="itemAlign">
+                        <article class="Advisor">
+                            <div class="avis3">
+                                    <img class="formImage" src="picture/deadpoolavis.png" alt="deadpool">
+                            </div>
+                            <div class="avis3">
+                                <h3>Wolverine officiel </h3>
+                                <h4>★★★★★</h4>
+                            </div>
+                            <p>
+                                A mon grand amour DeadPool qui a sauvé le monde, heureusement que le monde a une personne plus compétente que moi.
+                            </p>
+                        
+                        </article>
+                        <article class="Advisor">
+                            <div class="avis3">
+                                    <img class="formImage" src="picture/wolverine.png" alt="wolverine">
+                            </div>
+                            <div class="avis3">
+                                <h3>Wolverine</h3>
+                                <h4>★☆☆☆☆</h4>
+                            </div>
+                                <p>
+                                ...
+                                Rends moi mon téléphone!
+                                </p>
+                            
+                        </article>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="itemAlign">
+                    <article class="Advisor">
+                        <div class="avis3">
+                            <img class="formImage" src="picture/vladimir.png" alt="vladimir">
+                        </div>
+                        <div class="avis3">
+                            <h3>Vladimir Poutine </h3>
+                            <h4>★★★★★</h4>
+                        </div>
+
+                        <p>
+                        Молодец, ему удалось искоренить интеллект и независимость русских.
+                        Еще раз спасибо.
+                        </p>
+                    </article>
+                    <article class="Advisor">
+                        <div class="avis3">
+                            <img class="formImage" src="picture/teenage.png" alt="Negasonic Teenage Warhead">
+                        </div>
+                        <div class="avis3">
+                            <h3>Negasonic Teenage Warhead</h3>
+                            <h4>★★★★★</h4>
+                        </div>
+                        <p>
+                            Cool!
+                        </p>
+                    </article>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="itemAlign">
+                    <article class="Advisor">
+                        <div class="avis3">
+                            <img class="formImage" src="picture/colossus.png" alt="colossus">
+                        </div>
+                        <div class="avis3">
+                            <h3>Colossus</h3>
+                            <h4>★★★☆☆</h4>
+                        </div>
+                        <p>
+                            Soit un héros Deadpool, rejoint les x-Men, il y a encore une partie bien en toi.
+                        </p>
+                    </article>
+                    <article class="Advisor">
+                        <div class="avis3">
+                            <img class="formImage" src="picture/dopinger.png" alt="Dopinder">
+                        </div>
+                        <div class="avis3">
+                            <h3>Dopinder</h3>
+                            <h4>★★★★☆</h4>
+                        </div>
+                        
+                        <p>
+                            Monsieur Pool est une personne très professionnelle, cependant, j'attends toujours que vous payiez le trajet de taxi.
+                        </p>
+                        
+                    </article>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <div id="emptyContact"></div>
+            <form id="linkContact" class="Contact">
+                <form id="contactForm" onsubmit="formSent()">
+                    <label for="name">Nom (obligatoire):</label><br>
+                    <input type="text" id="name" name="name"><br>
+        
+                    <label for="email">Email (obligatoire):</label><br>
+                    <input type="email" id="email" name="email"><br>
+        
+                    <label for="Sujet">Sujet</label><br>
+                    <select type="text" id="sujet"><br>
+                        <option value="sujet">Choissisez un sujet</option>
+                        <option value="Tarif">Tarif</option>
+                        <option value="Compétences">Compétences</option>
+                        <option value="Déplacement">Déplacement</option>
+                        <option value="Pourquoi les licornes?">Pourquoi les licornes?</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                    <div class="blockTextArea">
+                        <img id="deadform" src="picture/deadpoolform.png" alt="deadpool sur le textarea">
+                        <label for="message">Message:</label><br>
+                        <div>
+                            <textarea id="message" name="message"> </textarea>
+                        </div>
+                    </div>
+                    <button class="formButton" type="submit" onclick="submitForm(event)">Envoyer</button>
+        
+                </form>
+
+                <footer>
+                    <div class="contenu-footer">
+                      <div class="footer-bloc">
+                        <h2>A propos</h2>
+                        <ul class="list">
+                          <li><a href="#">Légalité ?</a></li>
+                          <li><a href="#">Assasinats</a></li>
+                          <li><a href="#">Autographe</a></li>
+                        </ul>
+                      </div>
+ 
+                      <div class="footer-bloc">
+                        <h2>Assistance</h2>
+                        <ul class="list">
+                          <li><a href="#">Centre d'aide</a></li>
+                          <li><a href="#">Mon harem</a></li>
+                          <li><a href="#">Contacter</a></li>
+                        </ul>
+                      </div>
+
+                       <div class="footer-bloc">
+                        <h2>Partenaire</h2>
+                        <ul class="list">
+                          <li><a href="#">Ma grand mère</a></li>
+                          <li><a href="#">Les licornes 🦄🦄🦄</a></li>
+                          <li><a href="#">X-truc</a></li>
+                      </ul>
+                      </div>
+                  
+                  
+                    </div>
+                    
+                  </footer>
+                  
+
+    <div id="fleche" class="fleche">
+        <a href="#header"><img src="picture/fleche.png" alt="fleche vers le haut"></a>
+    </div>
+</body>
+
+    <script src="main.js">
+        
+    </script>
+
+
+</html>
